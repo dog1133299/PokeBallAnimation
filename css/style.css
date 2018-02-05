@@ -1,0 +1,122 @@
+ @-webkit-keyframes shake{
+  from{-webkit-transform: translate(1vw,0) rotateZ(10deg);transform: translate(1vw,0) rotateZ(10deg);}
+  to{-webkit-transform:translate(-1vw,0) rotateZ(-10deg);transform:translate(-1vw,0) rotateZ(-10deg);}
+ }
+ @keyframes shake{
+  from{-webkit-transform: translate(1vw,0) rotateZ(10deg);transform: translate(1vw,0) rotateZ(10deg);}
+  to{-webkit-transform:translate(-1vw,0) rotateZ(-10deg);transform:translate(-1vw,0) rotateZ(-10deg);}
+ }
+ @-webkit-keyframes shadow{
+  from{-webkit-transform: translate(1vw,10vw);transform: translate(1vw,10vw);}
+  to{-webkit-transform :translate(-1vw,10vw);transform :translate(-1vw,10vw);}
+ }
+ @keyframes shadow{
+  from{-webkit-transform: translate(1vw,10vw);transform: translate(1vw,10vw);}
+  to{-webkit-transform :translate(-1vw,10vw);transform :translate(-1vw,10vw);}
+ }
+  @-webkit-keyframes button{
+  from{opacity: 1;}
+  to{opacity: 0.5;}
+ }
+  @keyframes button{
+  from{opacity: 1;}
+  to{opacity: 0.5;}
+ }
+ 
+
+ *{
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Square721 BT','Montserrat', sans-serif;
+ } 
+body{
+  background-color: rgb(55, 155, 220);
+  overflow: hidden;
+ 
+} 
+
+.pokeball{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20vw;
+  height: 20vw;
+  margin: -10vw 0 0 -10vw;
+  background-color: white; 
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-box-shadow: inset -1vw -1vw 0 rgba(0,0,0,0.3);
+          box-shadow: inset -1vw -1vw 0 rgba(0,0,0,0.3);
+  -webkit-transform: rotateZ(10deg);
+      -ms-transform: rotate(10deg);
+          transform: rotateZ(10deg);
+  -webkit-animation: shake 0.3s infinite alternate;
+          animation: shake 0.3s infinite alternate;
+}
+
+ .abovePart{
+  width: 20vw;
+  height: 10vw;
+  border-radius: 100% 100% 0 0 ;
+  background-color: red; 
+
+ }
+ .line{
+  width: 22vw;
+  height: 2vw;
+  background-color: black;
+ }
+ .button{
+width: 5vw;
+height: 5vw;
+border: 1vw solid black;
+border-radius: 50%;
+background-color: white;
+-webkit-transform: translate(0,-5vw);
+    -ms-transform: translate(0,-5vw);
+        transform: translate(0,-5vw);
+ 
+
+ }
+ .insideButton{
+  width: 2vw;
+  height: 2vw;
+  border: 0.5vw solid black;
+
+  border-radius: 50%;
+  background-color: grey;
+-webkit-transform: translate(0,1vw);
+    -ms-transform: translate(0,1vw);
+        transform: translate(0,1vw);
+ -webkit-animation: button 0.3s infinite alternate;
+         animation: button 0.3s infinite alternate;
+
+ }
+ .shadow{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -1vw 0 0 -5vw;
+  width: 10vw;
+  height: 2vw;
+  border-radius: 50%;
+  background-color: rgba(0,0,0,0.3); 
+  z-index: -1;
+  -webkit-animation: shadow 0.3s infinite alternate;
+          animation: shadow 0.3s infinite alternate;
+
+ }
+ .msg{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  color: white;
+  text-align: center;
+  font-family: 'Square721 BT','Montserrat', sans-serif;
+  font-size: 20px;
+ }
+ .msg>a{
+  text-decoration: none; 
+  color: lightgray;
+  
+ }  
