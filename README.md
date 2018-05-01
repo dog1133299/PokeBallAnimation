@@ -1,6 +1,6 @@
-# PokeBallAnimation
-Poke Ball Animation with pure CSS
+# PokeBallIllustration
+Poke Ball Illustration with pure CSS
 
-![PokeBallAnimation](src/PokeBallAnimation.gif);
+![PokeBallIllustration](src/PokeBallIllustration.gif);
 
-## See it at : https://dog1133299.github.io/PokeBallAnimation/
+## See it at : https://dog1133299.github.io/PokeBallIllustration/
